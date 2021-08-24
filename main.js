@@ -92,9 +92,10 @@ function calcCost() {
         let ind = numOfRows.indexOf(el);
         cost += price[val][ind];
     }
+    console.log(cost)
     document.querySelector(
         ".cost"
-    ).innerHTML = `Выбрано ${selectedElem.length} за ${cost} ${val}`;
+    ).innerHTML = `Выбрано ${selectedElem.length} за ${+cost.toFixed(2)} ${val}`;
 }
 
 function changeVal() {
